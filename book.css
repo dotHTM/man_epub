@@ -1,0 +1,65 @@
+@charset "UTF-8";
+code, pre, samp {
+  border-radius: 0.25em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  background: #eeeeee;
+  border: 1px dashed rgba(0, 0, 0, 0.25); }
+  code *, pre *, samp * {
+    border: none !important; }
+
+.var {
+  color: #e60000; }
+
+.kbd, .key {
+  border-top: 2px #b7b7b7 solid;
+  border-left: 2px #b7b7b7 solid;
+  border-bottom: 2px #6a6a6a solid;
+  border-right: 2px #6a6a6a solid;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1px;
+  padding-right: 1px;
+  background: #ddd;
+  font-style: oblique; }
+
+p {
+  line-height: 1.3em; }
+
+dl, dt, dd {
+  border-radius: 0.25rem;
+  padding: 0.1rem; }
+
+acronym {
+  font-style: oblique;
+  color: #006700; }
+
+div.header {
+  display: none; }
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 60%; }
+
+hr {
+  height: 0;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center; }
+
+hr:after {
+  content: "§ § §";
+  display: inline-block;
+  position: relative;
+  font-size: 0.75rem;
+  top: -0.5625rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background: white; }
+
+/*# sourceMappingURL=book.css.map */

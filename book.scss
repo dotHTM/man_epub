@@ -1,0 +1,114 @@
+
+
+// @import 'yank';
+
+
+$backgroundBase: #eee;
+
+$codeBackground: rgba($backgroundBase, 1);
+
+
+$codeLRPadding: 0.3em;
+$codeTBPadding: 0.1em;
+
+code, pre, samp {
+	*{
+		border: none !important;
+	}
+	border-radius: 0.25em;
+	padding-top: $codeTBPadding;
+	padding-bottom: $codeTBPadding;
+	padding-left:  $codeLRPadding;
+	padding-right: $codeLRPadding;
+	
+	background: $codeBackground ;
+	border: 1px dashed rgba( black, .25);;
+	// margin: 0.5rem;
+}
+
+.var{
+	color: darken( red, 5 );
+}
+
+   
+
+$lightingFactor: 15;
+
+$buttonBlock: #ddd;
+$buttonLightEdge: darken($buttonBlock, $lightingFactor);
+$buttonDarkEdge: darken($buttonBlock, $lightingFactor*3);
+
+$buttonEdgeWidth: 2px;
+$buttonBlockPadding: 1px;
+
+
+
+.kbd, .key{
+	border-top: $buttonEdgeWidth $buttonLightEdge solid;
+	border-left: $buttonEdgeWidth $buttonLightEdge solid;
+	border-bottom: $buttonEdgeWidth $buttonDarkEdge solid;
+	border-right: $buttonEdgeWidth $buttonDarkEdge solid;
+	
+	padding-top:0;
+	padding-bottom:0;
+	
+	padding-left: $buttonBlockPadding;
+	padding-right: $buttonBlockPadding;
+
+	background: $buttonBlock;
+	font-style: oblique;
+}
+
+
+p{
+	line-height: 1.3em;
+}
+
+dl, dt, dd {
+	border-radius: 0.25rem;
+	padding: 0.1rem;
+	// background: $codeBackground;
+	// background: rgba($backgroundBase, .05) ;
+	// border: 1px dashed rgba($backgroundBase, .25);;
+}
+
+acronym{
+	font-style: oblique;
+	color: darken( green, 5 );
+
+}
+
+div.header{
+	display: none
+}
+
+
+hr {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	width: 60%;
+}
+
+hr {
+	height: 0;
+	padding: 0;
+	border: none;
+	border-top: medium double #333;
+
+	color: #333;
+	text-align: center;
+	// vertical-align: middle;
+}
+hr:after {
+	content: "§ § §";
+	display: inline-block;
+	position: relative;
+	$hrFontSize: .75rem; 
+	font-size: $hrFontSize;
+	top: -($hrFontSize)*.75;
+	padding-left: $hrFontSize;
+	padding-right: $hrFontSize;
+	
+	background: white;
+
+}
